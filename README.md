@@ -1,15 +1,19 @@
-# Intro to ML: coding foundations
+# Intro to ML: tutoring sessions
 
-This repo goes with the tutoring sessions: Python basics, git, conda, numpy, pandas and matplotlib. Its notebooks build up to the course's kNN notebook.
+These are the notebooks for the Intro to ML tutoring sessions. Each session has its own folder, and new sessions are added as we go through the course material.
+
+## Session 1: coding foundations (`session01/`)
+
+Python basics, git, conda, numpy, pandas and matplotlib: the foundations underneath the recitation notebooks you've already worked through. The session ends with a kNN prediction you build by hand, and then check against sklearn.
 
 | Notebook | Topic |
 |---|---|
-| `00_setup_check.ipynb` | Is everything installed? |
-| `01_python_basics.ipynb` | Variables, types, errors, lists, dictionaries |
-| `02_functions.ipynb` | `if`, `for`, functions, testing with `assert` |
-| `03_numpy.ipynb` | Arrays, shapes, vectorised maths, masks, distances |
-| `04_pandas.ipynb` | Loading, auditing, filtering and grouping real data |
-| `05_matplotlib.ipynb` | Histograms, scatter plots, and a mini kNN by hand |
+| `session01/00_setup_check.ipynb` | Is everything installed? |
+| `session01/01_python_basics.ipynb` | Variables, types, errors, lists, dictionaries |
+| `session01/02_functions.ipynb` | `if`, `for`, functions, testing with `assert` |
+| `session01/03_numpy.ipynb` | Arrays, shapes, vectorised maths, masks, distances |
+| `session01/04_pandas.ipynb` | Loading, auditing, filtering and grouping real data |
+| `session01/05_matplotlib.ipynb` | Histograms, scatter plots, and a mini kNN by hand |
 
 **Can't install anything, or your setup broke?** Click the "Open in Colab" badge at the top of any notebook. It runs in your browser, so you can keep following along.
 
@@ -63,14 +67,14 @@ git config --global pull.rebase false
 Run these commands in the Miniforge Prompt (Windows) or Terminal (Mac):
 
 ```bash
-git clone https://github.com/abuchnick/intro-ml-foundations.git
-cd intro-ml-foundations
+git clone https://github.com/abuchnick/intro-to-ml-tutoring.git
+cd intro-to-ml-tutoring
 conda env create -f environment.yml
 ```
 
 The last command downloads Python and the course libraries into an environment called `intro-ml`. It takes a few minutes. You only need to do it **once**.
 
-Next, open the repo in VS Code: **File → Open Folder…** and select the `intro-ml-foundations` folder. Open `00_setup_check.ipynb`, click **Select Kernel** (top right), then **Python Environments**, then **intro-ml**. Run the cell.
+Next, open the repo in VS Code: **File → Open Folder…** and select the `intro-to-ml-tutoring` folder. Open `session01/00_setup_check.ipynb`, click **Select Kernel** (top right), then **Python Environments**, then **intro-ml**. Run the cell.
 
 ---
 
@@ -79,12 +83,12 @@ Next, open the repo in VS Code: **File → Open Folder…** and select the `intr
 | Command | What it does |
 |---|---|
 | `git status` | Shows what has changed since your last commit. Run it whenever you're unsure. |
-| `git add 01_python_basics.ipynb` | Marks that file to be saved in the next commit |
+| `git add session01/01_python_basics.ipynb` | Marks that file to be saved in the next commit |
 | `git commit -m "finished exercise 1"` | Saves a snapshot of the marked files, with a message |
 | `git log --oneline` | Lists your past snapshots |
 | `git pull --no-edit` | Downloads updates from the course repo (for example, new solutions) |
 
-**Fell behind during the session?** Run `git pull --no-edit`, then open the matching notebook in `solutions/`. Your own work is safe, because solutions always arrive as **new files** and never overwrite your notebooks.
+**Fell behind during the session?** Run `git pull --no-edit`, then open the matching notebook in that session's `solutions/` folder (for example `session01/solutions/`). Your own work is safe, because solutions always arrive as **new files** and never overwrite your notebooks.
 
 ## 4. conda cheat sheet
 
