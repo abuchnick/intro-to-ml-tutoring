@@ -1,0 +1,16 @@
+# The conda environment for the whole course.
+# Create it once with:   conda env create -f environment.yml
+# Activate it with:      conda activate intro-ml
+name: intro-ml
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - imbalanced-learn
+  - ipykernel
+  - jupyterlab
