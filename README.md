@@ -15,6 +15,8 @@ Python basics, git, conda, numpy, pandas and matplotlib: the foundations underne
 | `session01/04_pandas.ipynb` | Loading, auditing, filtering and grouping real data |
 | `session01/05_matplotlib.ipynb` | Histograms, scatter plots, and a mini kNN by hand |
 
+**Slides** (why git, why conda): open `session01/slides/index.html` in your browser by double-clicking it in your file explorer. Use ← / → to move between slides. No clone? On GitHub, open the file and use **Download raw file**.
+
 **Can't install anything, or your setup broke?** Click the "Open in Colab" badge at the top of any notebook. It runs in your browser, so you can keep following along.
 
 ---
